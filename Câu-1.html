@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // nhập giá trị điểm thi vào mảng s
+    let s = [5, 6, 8, 6, 3, 7, 9, 6, 4];
+
+    // Tạo hàm tìm kiếm
+    function FindMax(s) {
+        let max = s[0];
+        for (let i = 0; i < s.length; i++) {
+            if (s[i] > max) {
+                max = s[i];
+            }
+        }
+        return max;
+    }
+
+    console.log(FindMax(s))
+</script>
+</body>
+</html>
